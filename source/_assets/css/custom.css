@@ -7,6 +7,12 @@
 }
 
 @media only screen {
+    /* XXS (iPhone SE) */
+    @media (max-width: 324px) {
+        .intro-header {
+            min-height: 600px;
+        }
+    }
     /* From SM and up */
     @media (min-width: 768px) {
         .intro-header {
@@ -40,6 +46,10 @@
     .button_down {
         display: unset;
     }
+
+    .col-sm-4 {
+        margin-bottom: 3em;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -53,6 +63,15 @@
 
     .intro-social-buttons {
         margin-top: 2em;
+    }
+
+    .intro-social-buttons li {
+        padding-left: .7em !important;
+        padding-right: .7em !important;
+    }
+
+    #whoami .row + .row {
+        margin-top: 3em;
     }
 }
 
@@ -72,8 +91,8 @@
 
 .intro-social-buttons li {
     display: inline-block !important;
-    padding-left: .7em !important;
-    padding-right: .7em !important;
+    padding-left: .2em !important;
+    padding-right: .2em !important;
 }
 
 .mt-1 {

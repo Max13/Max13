@@ -41,6 +41,15 @@
     <!-- Custom CSS -->
     <link href="{{ mix('css/custom.css', 'assets/build') }}" rel="stylesheet">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157964671-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-157964671-1');
+    </script>
+
     <!--[if IE 9]>
         <script src="{{ mix('js/PIE_IE9.js', 'assets/build') }}"></script>
     <![endif]-->

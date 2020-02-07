@@ -9,11 +9,11 @@
     <meta charset="utf-8">
     <meta name="author" content="Adnan RIHAN">
     <meta name="language" content="fr">
-    <meta name="description" content="Bienvenu sur ma page de présentation: Adnan RIHAN – Ingénieur Système, Développeur Web, Cryptographe et Pilote d'avion. Je conçois et développe des architectures et solutions de bureau en C/C++/Qt, Web en PHP/NodeJS (Laravel), serveurs headless (Unix et Linux), Administration de réseaux et systèmes mais aussi frontend (HTML/CSS/JS, Bootstrap, VueJS...) bien que ce ne soit pas ma spécialité. En tant que cryptographe, je conçois également des systèmes d'authentification, chiffrement et d'échange de données sécurisées. Pilote d'avion et musicien le reste du temps, j'aime donc voyager.">
+    <meta name="description" content="Bienvenu sur ma page de présentation: Adnan RIHAN – Architecte Informatique, Développeur Full-Stack, Cryptographe et Pilote d'avion. Je conçois et développe des architectures et solutions de bureau en C/C++/Qt, Web en PHP/NodeJS (Laravel), serveurs headless (Unix et Linux), Administration de réseaux et systèmes mais aussi frontend (HTML/CSS/JS, Bootstrap, VueJS...) bien que ce ne soit pas ma spécialité. En tant que cryptographe, je conçois également des systèmes d'authentification, chiffrement et d'échange de données sécurisées. Pilote d'avion et musicien le reste du temps, j'aime donc voyager.">
     <meta name="keywords" content="Développeur, Programmeur, C, C++, Qt, Laravel, Linux, Unix, Bash, Shell, Serveur, Headless, Webapp, Web, Applications de bureau, Architecture système, Ingénieur Système, Cryptographe, PHP, PHP5, PHP7, JS, HTML, HTML5, CSS, CSS2, CSS3, Crypto, Cryptographie">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
-    <title>Adnan RIHAN: Ingénieur Système, Développeur Web, Cryptographe et Pilote</title>
+    <title>Adnan RIHAN: Architecte Informatique, Développeur Full-Stack, Cryptographe et Pilote</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ mix('css/bootstrap.min.css', 'assets/build') }}" rel="stylesheet">
@@ -66,7 +66,7 @@
         <div class="text-center self">
             <img src="/assets/build/img/avatar.svg" class="center-block img-responsive" alt="Avatar Afro" width="150">
             <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Adnan RIHAN</h1>
-            <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Ingénieur Système, Développeur Web, Cryptographe et Pilote.</h3>
+            <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Architecte Informatique, Développeur Full-Stack, Cryptographe et Pilote.</h3>
             <ul class="list-inline intro-social-buttons">
                 <li>
                     <a href="#" class="swing wow fadeIn" data-wow-delay="1.2s">
@@ -90,7 +90,7 @@
 
         <div class="wow fadeIn center-block continue">
             <div class="button_down">
-                <a href="#whatis" class="imgcircle wow bounceInUp" data-wow-duration="1.5s">
+                <a href="#whoami" class="imgcircle wow bounceInUp" data-wow-duration="1.5s">
                     <img class="img_scroll" src="/assets/build/img/icon/circle.png" alt="Continue">
                 </a>
             </div>
@@ -107,13 +107,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#home">Flatfy</a>
+                <a class="navbar-brand" href="#home">Adnan</a>
             </div>
 
             <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
 
-                    <li class="menuItem"><a href="#whatis">What is?</a></li>
+                    <li class="menuItem"><a href="#whoami">Qui suis-je?</a></li>
                     <li class="menuItem"><a href="#useit">Use It</a></li>
                     <li class="menuItem"><a href="#screen">Screenshot</a></li>
                     <li class="menuItem"><a href="#credits">Credits</a></li>
@@ -125,12 +125,12 @@
     </nav>
 
     <!-- What is -->
-    <div id="whatis" class="content-section-b" style="border-top: 0">
+    <div id="whoami" class="content-section-b" style="border-top: 0">
         <div class="container">
 
-            <div class="col-md-6 col-md-offset-3 text-center wrap_title">
-                <h2>What is?</h2>
-                <p class="lead" style="margin-top:0">A special thanks to Death.</p>
+            <div class="text-center wrap_title">
+                <h2>A propos de moi</h2>
+                <p><em>Un peu de narcissisme</em></p>
 
             </div>
 
@@ -138,8 +138,8 @@
 
                 <div class="col-sm-4 wow fadeInDown text-center">
                   <img class="rotate" src="/assets/build/img/icon/tweet.svg" alt="Generic placeholder image">
-                  <h3>Follow Me</h3>
-                  <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
+                  <h3>Architecte / Développeur full-stack</h3>
+                  <p class="lead">Un nom de métier qui fait cool. Ça veut simplement dire que je suis autant capable de concevoir et développer « l'arrière plan » (ou back-end) que la partie « frontale » (ou front-end) d'une solution web ou système.</p>
 
                   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
                 </div><!-- /.col-lg-4 -->

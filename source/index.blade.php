@@ -179,7 +179,7 @@
 
             </div><!-- /.row -->
 
-            <div class="row mt-3">
+            <div class="row">
                 <div class="col-sm-4 wow fadeInDown text-center">
                     <img src="/assets/build/img/icon/home-automation.svg" alt="Domotique">
                     {{-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> --}}
@@ -200,8 +200,8 @@
 
                 <div class="col-sm-4 wow fadeInDown text-center">
                     <img src="/assets/build/img/icon/pilot.svg" alt="Pilote privé">
-                    <h3>Bootstrap</h3>
-                    <p class="lead">Licence de pilote privé en cours.</p>
+                    <h3>Pilote privé</h3>
+                    <p class="lead">Licence en cours.</p>
                     <p class="small">28h29 au compteur</p>
 
                     <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->

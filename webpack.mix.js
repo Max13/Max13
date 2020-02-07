@@ -26,6 +26,10 @@ mix.webpackConfig({
         'source/_assets/css/custom.css',
     ], mix.config.publicPath + '/css')
     .copy([
+        'source/_assets/fonts/flat-ui-icons-regular.eot',
+        'source/_assets/fonts/flat-ui-icons-regular.svg',
+        'source/_assets/fonts/flat-ui-icons-regular.ttf',
+        'source/_assets/fonts/flat-ui-icons-regular.woff',
         'source/_assets/fonts/fontawesome-webfont.eot',
         'source/_assets/fonts/fontawesome-webfont.svg',
         'source/_assets/fonts/fontawesome-webfont.ttf',

@@ -117,8 +117,7 @@
 
             <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-
-                    <li class="menuItem"><a href="#whoami">Qui suis-je?</a></li>
+                    <li class="menuItem"><a href="#whoami">A propos de moi</a></li>
                     <li class="menuItem"><a href="#useit">Use It</a></li>
                     <li class="menuItem"><a href="#screen">Screenshot</a></li>
                     <li class="menuItem"><a href="#credits">Credits</a></li>
@@ -129,63 +128,73 @@
         </div>
     </nav>
 
-    <!-- What is -->
+    <!-- Who am I -->
     <div id="whoami" class="content-section-b" style="border-top: 0">
         <div class="container">
 
             <div class="text-center wrap_title">
                 <h2>A propos de moi</h2>
                 <p><em>Un peu de narcissisme</em></p>
-
             </div>
 
             <div class="row">
-
                 <div class="col-sm-4 wow fadeInDown text-center">
-                  <img class="rotate" src="/assets/build/img/icon/tweet.svg" alt="Generic placeholder image">
-                  <h3>Architecte / Développeur full-stack</h3>
-                  <p class="lead">Un nom de métier qui fait cool. Ça veut simplement dire que je suis autant capable de concevoir et développer « l'arrière plan » (ou back-end) que la partie « frontale » (ou front-end) d'une solution web ou système.</p>
+                    <img src="/assets/build/img/icon/blueprint.svg" alt="Plan">
+                    {{-- Rudez Studio: https://www.iconfinder.com/Ruslancorel --}}
+                    <h3>Architecture</h3>
+                    <p class="lead">Je conçois l'architecture des solutions de mes clients. Avec mes clients. <small><em>(C'est quand même mieux)</em></small></p>
 
-                  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+                    <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
                 </div><!-- /.col-lg-4 -->
 
                 <div class="col-sm-4 wow fadeInDown text-center">
-                  <img  class="rotate" src="/assets/build/img/icon/picture.svg" alt="Generic placeholder image">
-                   <h3>Gallery</h3>
-                   <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-                   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+                    <img src="/assets/build/img/icon/fullstack.svg" alt="Fullstack">
+                    {{-- Alexiuz AS: https://www.iconfinder.com/WHCompare --}}
+                    <h3>Full-Stack</h3>
+                    <p class="lead">De l'arrière-plan (<em>back-end</em>) au frontal (front-end), en passant par des <abbr title="Application Programming Interface, ou Interface de Programmation">API</abbr> qui tapent sur des bases de données répliquées sur la lune tout en envoyant des notifications sur la TV de la salle de bain.</p>
+                    <p class="small">Html/CSS/JS (jQuery/VueJS/Apache Cordova), PHP (Laravel ++), MySQL/Sqlite, C/C++ (<em>Qt Ambassador</em>), Ruby (Quelques packages homebrew)</p>
+
+                    <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
                 </div><!-- /.col-lg-4 -->
 
                 <div class="col-sm-4 wow fadeInDown text-center">
-                  <img  class="rotate" src="/assets/build/img/icon/retina.svg" alt="Generic placeholder image">
-                   <h3>Retina</h3>
-                    <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-                  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+                    <img src="/assets/build/img/icon/cryptography.svg" alt="Cryptographie">
+                    {{-- Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> --}}
+                    <h3>Cryptographie</h3>
+                    <p class="lead">Implémentation de protocoles de chiffrement en vue de la sécurisation des données lors du stockage ou des échanges.<br><small><em>Big Brother...</em>&nbsp;🤫</small></p>
+                    <p class="small">Contributeur sur <abbr title="Qt Cryptographic Architecture">QCA</abbr>, quelques projets en entreprise</p>
+
+                    <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
                 </div><!-- /.col-lg-4 -->
 
             </div><!-- /.row -->
 
-            <div class="row tworow">
+            <div class="row mt-3">
+                <div class="col-sm-4 wow fadeInDown text-center">
+                    <img src="/assets/build/img/icon/home-automation.svg" alt="Domotique">
+                    {{-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> --}}
+                    <h3>Systèmes embarqués, Domotique et <abbr title="Machine to Machine, ou Communication entre machine sans intervention humaine">M2M</abbr></h3>
+                    <p class="lead">Si j'ai pu connecter ma maison, à base d'Arduino, d'ESP-8266 et de Home Assistant, <small>au prix de quelques frictions avec ma moitié</small>… C'est que je peux le faire n'importe où ailleurs.</p>
 
-                <div class="col-sm-4  wow fadeInDown text-center">
-                  <img class="rotate" src="/assets/build/img/icon/laptop.svg" alt="Generic placeholder image">
-                  <h3>Responsive</h3>
-                  <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-                 <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+                    <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
                 </div><!-- /.col-lg-4 -->
 
                 <div class="col-sm-4 wow fadeInDown text-center">
-                  <img  class="rotate" src="/assets/build/img/icon/map.svg" alt="Generic placeholder image">
-                   <h3>Google</h3>
-                   <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
+                  <img src="/assets/build/img/icon/congo.svg" alt="République du Congo">
+                   <h3>Enfant du Congo</h3>
+                   {{-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> --}}
+                   <p class="lead">Croyez-le, c'est une compétence.</p>
+
                    <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
                 </div><!-- /.col-lg-4 -->
 
                 <div class="col-sm-4 wow fadeInDown text-center">
-                  <img  class="rotate" src="/assets/build/img/icon/browser.svg" alt="Generic placeholder image">
-                   <h3>Bootstrap</h3>
-                 <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-                  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+                    <img src="/assets/build/img/icon/pilot.svg" alt="Pilote privé">
+                    <h3>Bootstrap</h3>
+                    <p class="lead">Licence de pilote privé en cours.</p>
+                    <p class="small">28h29 au compteur</p>
+
+                    <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
                 </div><!-- /.col-lg-4 -->
 
             </div><!-- /.row -->

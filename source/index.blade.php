@@ -103,7 +103,7 @@
                     </a>
                 </li>
             </ul>
-            <h5 class="h5_home wow fadeIn hidden-xs mt-2" data-wow-delay="2s"><em>Le fond, c'est juste pour faire beau</em></h5>
+            <h5 class="h5_home wow fadeIn hidden-xs mt-2" data-wow-delay="2s"><i>Le fond, c'est juste pour faire beau</i></h5>
         </div>
         <!-- /.self -->
 
@@ -144,7 +144,7 @@
 
             <div class="text-center wrap_title">
                 <h2>A propos de moi</h2>
-                <p><em>Un peu de narcissisme</em></p>
+                <p><i>Un peu de narcissisme</i></p>
             </div>
 
             <div class="row">
@@ -152,7 +152,7 @@
                     <img src="/assets/build/img/icon/blueprint.svg" alt="Plan">
                     {{-- Rudez Studio: https://www.iconfinder.com/Ruslancorel --}}
                     <h3>Architecture</h3>
-                    <p class="lead">Je conçois l'architecture des solutions de mes clients. Avec mes clients. <small><em>(C'est quand même mieux)</em></small></p>
+                    <p class="lead">Je conçois l'architecture des solutions de mes clients. Avec mes clients. <small><i>(C'est quand même mieux)</i></small></p>
 
                     <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
                 </div><!-- /.col-lg-4 -->
@@ -161,8 +161,8 @@
                     <img src="/assets/build/img/icon/fullstack.svg" alt="Fullstack">
                     {{-- Alexiuz AS: https://www.iconfinder.com/WHCompare --}}
                     <h3>Full-Stack</h3>
-                    <p class="lead">De l'arrière-plan (<em>back-end</em>) au frontal (front-end), en passant par des <abbr title="Application Programming Interface, ou Interface de Programmation">API</abbr> qui tapent sur des bases de données répliquées sur la lune tout en envoyant des notifications sur la TV de la salle de bain.</p>
-                    <p class="small">Html/CSS/JS (jQuery/VueJS/Apache Cordova), PHP (Laravel ++), MySQL/Sqlite, C/C++ (<em>Qt Ambassador</em>), Ruby (Quelques packages homebrew)</p>
+                    <p class="lead">De l'arrière-plan (<i>back-end</i>) au frontal (<i>front-end</i>), en passant par des <abbr title="Application Programming Interface, ou Interface de Programmation">API</abbr> qui tapent sur des bases de données répliquées sur la lune tout en envoyant des notifications sur la TV de la salle de bain.</p>
+                    <p class="small">Html/CSS/JS (Bootstrap/jQuery/VueJS/Apache Cordova), PHP (Laravel ++), MySQL/Sqlite, C/C++ (<i>Qt Ambassador</i>), Ruby (Quelques packages homebrew)</p>
 
                     <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
                 </div><!-- /.col-lg-4 -->
@@ -171,7 +171,7 @@
                     <img src="/assets/build/img/icon/cryptography.svg" alt="Cryptographie">
                     {{-- Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> --}}
                     <h3>Cryptographie</h3>
-                    <p class="lead">Implémentation de protocoles de chiffrement en vue de la sécurisation des données lors du stockage ou des échanges.<br><small><em>Big Brother...</em>&nbsp;🤫</small></p>
+                    <p class="lead">Implémentation de protocoles de chiffrement en vue de la sécurisation des données lors du stockage ou des échanges.<br><small><i>Big Brother...</i>&nbsp;🤫</small></p>
                     <p class="small">Contributeur sur <abbr title="Qt Cryptographic Architecture">QCA</abbr>, quelques projets en entreprise</p>
 
                     <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->

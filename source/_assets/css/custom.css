@@ -6,6 +6,10 @@
     width: 50px;
 }
 
+.dedication {
+    color: #34495e;
+}
+
 @media only screen {
     /* XXS (iPhone SE) */
     @media (max-width: 324px) {
@@ -13,6 +17,7 @@
             min-height: 600px;
         }
     }
+
     /* From SM and up */
     @media (min-width: 768px) {
         .intro-header {
@@ -119,24 +124,26 @@
     margin-bottom: .5em;
 }
 
-/*@media (min-width: 992px) {
-    .h1_home{
-        font-size: 60px;
-        letter-spacing: 6px;
-    }
-}*/
+footer.banner {
+    background: unset;
+    background-color: #34495e;
+    color: #fff;
+    padding: 1.5em 2.5em;
+}
 
-/*@media only screen and (max-width: 767px) {
-    .intro-header {
-        height: 100%;
-        padding-top: 50px;
-        padding-top: 25px;
-        padding-bottom: 50px;
-        color: #f8f8f8;
-        background-image: none;
-        background-image: none;
-        background-size: cover;
-        text-align: center;
-        background-color: #34495e;
-    }
-}*/
+footer.banner a {
+    color: #fff;
+}
+
+footer.banner a:hover {
+    color: #1abc9c;
+}
+
+footer.banner p {
+    margin-bottom: 0;
+    line-height: unset;
+}
+
+footer.banner p.faded {
+    color: #89AACB;
+}

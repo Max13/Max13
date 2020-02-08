@@ -211,6 +211,14 @@
         </div>
     </div>
 
+    <footer class="banner">
+        <div class="row">
+            <p class="col-md-2 faded">Adnan RIHAN</p>
+            <p class="col-md-6 col-md-offset-1 dedication small text-center">À Verone MANKOU, sans qui je n'aurais pas eu besoin de faire ce site…</p>
+            <p class="col-md-3 text-right"><a href="#" title="En construction">Crédits</a></p>
+        </div>
+    </footer><!-- /footer -->
+
     <!-- JavaScript -->
     <script src="{{ mix('js/jquery-1.10.2.js', 'assets/build') }}"></script>
     <script src="{{ mix('js/bootstrap.min.js', 'assets/build') }}"></script>

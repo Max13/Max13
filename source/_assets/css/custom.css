@@ -37,14 +37,18 @@
     }
 }
 
+.h1_home {
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
 .intro-header .self {
     position: unset;
     top: 1em;
 }
 
-.h1_home {
-    font-size: 40px;
-    letter-spacing: 4px;
+.lead .btn-xs {
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -122,6 +126,10 @@
 
 #whoami .lead {
     margin-bottom: .5em;
+}
+
+a {
+    text-decoration: underline;
 }
 
 footer.banner {

@@ -132,6 +132,7 @@
             <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
                     <li class="menuItem"><a href="#whoami">A propos de moi</a></li>
+                    <li class="menuItem"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
 
@@ -211,6 +212,17 @@
         </div>
     </div>
 
+    <!-- Contact -->
+    <div id="contact" class="content-section-a">
+        <div class="container">
+            <div class="text-center wrap_title">
+                <h2>Contact</h2>
+                <p class="lead">Si les réseaux sociaux ne suffisent pas</p>
+                <button type="button" class="btn btn-primary" id="owo">Afficher mon e-mail</button>
+            </div>
+        </div>
+    </div>
+
     <footer class="banner">
         <div class="row">
             <p class="col-md-2 faded">Adnan RIHAN</p>
@@ -228,8 +240,17 @@
     <script src="{{ mix('js/stickUp.min.js', 'assets/build') }}"></script>
     <script type="text/javascript">
         jQuery(function($) {
-            $(document).ready( function() {
+            $(document).ready(function() {
                 $('.navbar-default').stickUp();
+
+                $('#owo').one('click', e => {
+                    $.get('/getEmail.php')
+                     .done(email => {
+                        let $link = $('<p><b><a href="mailto:' + email +'">' + email + '</a></b></p>');
+
+                        $(e.target).replaceWith($link);
+                     });
+                });
             });
         });
     </script>

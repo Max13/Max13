@@ -195,6 +195,7 @@
                    <h3>Enfant du Congo</h3>
                    {{-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> --}}
                    <p class="lead">Croyez-le, c'est une compétence.</p>
+                   <p class="small">Cela dit, j'ai aussi travaillé sur un projet d'informatisation du Cadastre avec le Ministère des Affaires Foncières en République Démocratique du Congo.</p>
 
                    <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
                 </div><!-- /.col-lg-4 -->

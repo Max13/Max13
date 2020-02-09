@@ -203,7 +203,7 @@
                     <img src="/assets/build/img/icon/pilot.svg" alt="Pilote privé">
                     <h3>Pilote privé</h3>
                     <p class="lead">Licence en cours.</p>
-                    <p class="small">28h29 au compteur</p>
+                    <p class="small">28h53 au compteur</p>
 
                     <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
                 </div><!-- /.col-lg-4 -->

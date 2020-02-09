@@ -1,0 +1,76 @@
+name: Deploy to SFTP
+
+on:
+  push:
+    branches: master
+
+env:
+  SERVER_HOST: ${{ secrets.SERVER_HOST }}
+  SERVER_USER: ${{ secrets.SERVER_USER }}
+  SERVER_BASE_PATH: ${{ secrets.SERVER_BASE_PATH }}
+  SERVER_RELEASES_PATH:
+  SERVER_RELEASE_PATH:
+  SERVER_STORAGE_PATH:
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-18.04
+    steps:
+
+      - name: Set env
+        run: |
+          SERVER_RELEASES_PATH="$SERVER_BASE_PATH/releases"
+          SERVER_RELEASE_PATH="$SERVER_RELEASES_PATH/$(date +%s)"
+          SERVER_STORAGE_PATH="$SERVER_BASE_PATH/storage"
+
+          echo "::set-env name=SERVER_RELEASES_PATH::$SERVER_RELEASES_PATH"
+          echo "::set-env name=SERVER_RELEASE_PATH::$SERVER_RELEASE_PATH"
+          echo "::set-env name=SERVER_STORAGE_PATH::$SERVER_STORAGE_PATH"
+
+      - uses: actions/checkout@v2
+
+      - name: Add getEmail.php stored as GitHub secret
+        env:
+          GET_EMAIL_PHP: ${{ secrets.PHP_GET_EMAIL }}
+        run: echo "$GET_EMAIL_PHP" > source/getEmail.php
+
+      - name: Install composer dependencies
+        run: composer install --prefer-dist --no-progress --no-suggest
+
+      - name: Install npm dependencies
+        run: npm i
+
+      - name: Build website
+        run: npm run production
+
+      - name: Add ssh key to container
+        env:
+          SERVER_SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SERVER_SSH_KEY" > ~/.ssh/id_rsa
+          cat << EOF > ~/.ssh/config
+            Host $SERVER_HOST
+              StrictHostKeyChecking no
+          EOF
+          chmod 400 ~/.ssh/*
+
+      - name: Create destination directories in server
+        run: ssh -i ~/.ssh/id_rsa $SERVER_USER@$SERVER_HOST "mkdir -p \"$SERVER_RELEASES_PATH\" \"$SERVER_STORAGE_PATH\""
+
+      - name: Upload build to server
+        run: rsync -rze "ssh -i ~/.ssh/id_rsa" build_production/ $SERVER_USER@$SERVER_HOST:"$SERVER_RELEASE_PATH"
+
+      - name: Deploy
+        run: |
+          ssh -i ~/.ssh/id_rsa $SERVER_USER@$SERVER_HOST << EOS
+            echo "Linking storage directory to release"
+            ln -sfn "$SERVER_STORAGE_PATH" "$SERVER_RELEASE_PATH"
+
+            echo "Linking storage directory to release"
+            ln -sfn "$SERVER_RELEASE_PATH" "$SERVER_BASE_PATH/current"
+
+            echo "Cleaning up old releases"
+            ls -1d -- "$SERVER_RELEASES_PATH"/* | sort -rg | tail -n +7 | xargs /bin/rm -rf --
+          EOS

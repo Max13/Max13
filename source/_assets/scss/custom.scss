@@ -80,6 +80,15 @@ footer.banner {
     }
 }
 
+img.credit {
+    height: 1.5em;
+    margin-right: .5em;
+}
+
+li {
+    list-style-type: initial;
+}
+
 @media only screen {
     @mixin bottom-continue {
         bottom: 8%;

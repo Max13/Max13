@@ -135,7 +135,6 @@
             <div class="row">
                 <div class="col-sm-4 wow fadeInDown text-center">
                     <img src="/assets/build/img/icon/blueprint.svg" alt="Plan">
-                    {{-- Rudez Studio: https://www.iconfinder.com/Ruslancorel --}}
                     <h3>Architecture</h3>
                     <p class="lead">Je conçois l'architecture des solutions de mes clients. Avec mes clients. <small><i>(C'est quand même mieux)</i></small></p>
 
@@ -144,7 +143,6 @@
 
                 <div class="col-sm-4 wow fadeInDown text-center">
                     <img src="/assets/build/img/icon/fullstack.svg" alt="Fullstack">
-                    {{-- Alexiuz AS: https://www.iconfinder.com/WHCompare --}}
                     <h3>Full-Stack</h3>
                     <p class="lead">De l'arrière-plan (<i>back-end</i>) au frontal (<i>front-end</i>), en passant par des <abbr title="Application Programming Interface, ou Interface de Programmation">API</abbr> qui tapent sur des bases de données répliquées sur la lune tout en envoyant des notifications sur la TV de la salle de bain.</p>
                     <p class="small">Html/CSS/JS (Bootstrap/jQuery/VueJS/Apache Cordova), PHP (Laravel ++), MySQL/Sqlite, C/C++ (<i>Qt Ambassador</i>), Ruby (Quelques packages homebrew)</p>
@@ -154,7 +152,6 @@
 
                 <div class="col-sm-4 wow fadeInDown text-center">
                     <img src="/assets/build/img/icon/cryptography.svg" alt="Cryptographie">
-                    {{-- Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> --}}
                     <h3>Cryptographie</h3>
                     <p class="lead">Implémentation de protocoles de chiffrement en vue de la sécurisation des données lors du stockage ou des échanges.<br><small><i>Big Brother...</i>&nbsp;🤫</small></p>
                     <p class="small">Contributeur sur <abbr title="Qt Cryptographic Architecture">QCA</abbr>, quelques projets en entreprise</p>
@@ -167,7 +164,6 @@
             <div class="row">
                 <div class="col-sm-4 wow fadeInDown text-center">
                     <img src="/assets/build/img/icon/home-automation.svg" alt="Domotique">
-                    {{-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> --}}
                     <h3>Systèmes embarqués, Domotique et <abbr title="Machine to Machine, ou Communication entre machine sans intervention humaine">M2M</abbr></h3>
                     <p class="lead">Si j'ai pu connecter ma maison, à base d'Arduino, d'ESP-8266 et de Home Assistant, <small>au prix de quelques frictions avec ma moitié</small>… C'est que je peux le faire n'importe où ailleurs.</p>
 
@@ -175,11 +171,10 @@
                 </div><!-- /.col-lg-4 -->
 
                 <div class="col-sm-4 wow fadeInDown text-center">
-                  <img src="/assets/build/img/icon/congo.svg" alt="République du Congo">
-                   <h3>Enfant du Congo</h3>
-                   {{-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> --}}
-                   <p class="lead">Croyez-le, c'est une compétence.</p>
-                   <p class="small">Cela dit, j'ai aussi travaillé sur un projet d'informatisation du Cadastre avec le Ministère des Affaires Foncières en République Démocratique du Congo.</p>
+                    <img src="/assets/build/img/icon/congo.svg" alt="République du Congo">
+                    <h3>Enfant du Congo</h3>
+                    <p class="lead">Croyez-le, c'est une compétence.</p>
+                    <p class="small">Cela dit, j'ai aussi travaillé sur un projet d'informatisation du Cadastre avec le Ministère des Affaires Foncières en République Démocratique du Congo.</p>
 
                    <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
                 </div><!-- /.col-lg-4 -->
@@ -212,9 +207,40 @@
         <div class="row">
             <p class="col-xs-6 col-md-2 faded">Adnan RIHAN</p>
             <p class="hidden-xs col-md-6 col-md-offset-1 dedication small text-center">À Verone MANKOU, sans qui je n'aurais pas eu besoin de faire ce site…</p>
-            <p class="col-xs-6 col-md-1 col-md-offset-2"><a href="#" title="En construction">Crédits</a></p>
+            <p class="col-xs-6 col-md-1 col-md-offset-2"><a href="#" title="En construction" data-toggle="modal" data-target="#modal-credits">Crédits</a></p>
         </div>
     </footer><!-- /footer -->
+
+    <!-- Modal Credits -->
+    <div class="modal fade" id="modal-credits" tabindex="-1" role="dialog" aria-labelledby="modal-credits-title">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-credits-title">Crédits</h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Les sources de ce site sont disponibles sur <a href="https://github.com/Max13/Max13" _target="_blank">GitHub</a>.</li>
+                        <li>Ce site est en déploiement continu (GitHub Workflow), et reflète donc les sources telles que publiées.</li>
+                        <li>Ce site est basé sur le template <a href="https://github.com/andreagalanti/Flatfy-Free-Flat-and-Responsive-HTML5-Template" _target="_blank">Flatfy</a> par <a href="https://github.com/andreagalanti" _target="_blank">Andrea Galanti</a></li>
+                        <li>
+                            Merci aux personnes suivantes pour leurs créations:
+                            <ul>
+                                <li><img class="credit" src="/assets/build/img/icon/blueprint.svg" alt="Plan"> par <a href="https://www.iconfinder.com/Ruslancorel" _target="_blank">Rudez Studio</a></li>
+                                <li><img class="credit" src="/assets/build/img/icon/fullstack.svg" alt="Fullstack"> par <a href="https://www.iconfinder.com/WHCompare" _target="_blank">Alexiuz AS</a></li>
+                                <li><img class="credit" src="/assets/build/img/icon/cryptography.svg" alt="Cryptographie"> par <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> de <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></li>
+                                <li><img class="credit" src="/assets/build/img/icon/home-automation.svg" alt="Domotique"> par <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons" _target="blank">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon" _target="blank">www.flaticon.com</a></li>
+                                <li><img class="credit" src="/assets/build/img/icon/congo.svg" alt="République du Congo"> par <a href="https://www.flaticon.com/authors/freepik" title="Freepik" _target="blank">Freepik</a> de <a href="https://www.flaticon.com/" title="Flaticon" _target="blank">www.flaticon.com</a></li>
+                                <li><img class="credit" src="/assets/build/img/icon/pilot.svg" alt="Pilote privé"> par <a href="https://www.iconfinder.com/laurareen" _target="blank">Laura Reen</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Model Credits -->
 
     <!-- JavaScript -->
     <script src="{{ mix('js/vendor.js', 'assets/build') }}"></script>

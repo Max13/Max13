@@ -12,8 +12,7 @@ mix.webpackConfig({
 });
 
  mix//.sass('source/_assets/sass/main.scss', 'css')
-    //.js('source/_assets/js/main.js', 'js')
-    .copy([
+    .styles([
         'source/_assets/css/bootstrap.min.css',
         'source/_assets/css/font-awesome.min.css',
         'source/_assets/css/general.css',
@@ -23,8 +22,8 @@ mix.webpackConfig({
         'source/_assets/css/style.css',
         'source/_assets/css/animate.css',
         'source/_assets/css/magnific-popup.css',
-        'source/_assets/css/custom.css',
-    ], mix.config.publicPath + '/css')
+    ], mix.config.publicPath + '/css/vendor.css')
+    .styles('source/_assets/css/custom.css', mix.config.publicPath + '/css/custom.css')
     .copy([
         'source/_assets/fonts/flat-ui-icons-regular.eot',
         'source/_assets/fonts/flat-ui-icons-regular.svg',
@@ -42,11 +41,8 @@ mix.webpackConfig({
         'source/_assets/fonts/glyphicons-halflings-regular.woff',
     ], mix.config.publicPath + '/fonts')
     .copyDirectory('source/_assets/fonts/lato', mix.config.publicPath + '/fonts/lato')
-    .copy([
+    .scripts([
         'source/_assets/js/modernizr-2.8.3.min.js',
-        'source/_assets/js/PIE_IE9.js',
-        'source/_assets/js/PIE_IE678.js',
-        'source/_assets/js/html5shiv.js',
         'source/_assets/js/jquery-1.10.2.js',
         'source/_assets/js/bootstrap.min.js',
         'source/_assets/js/owl.carousel.js',
@@ -57,6 +53,11 @@ mix.webpackConfig({
         'source/_assets/js/classie.js',
         'source/_assets/js/uiMorphingButton_inflow.js',
         'source/_assets/js/jquery.magnific-popup.js',
+    ], mix.config.publicPath + '/js/vendor.js')
+    .copy([
+        'source/_assets/js/PIE_IE9.js',
+        'source/_assets/js/PIE_IE678.js',
+        'source/_assets/js/html5shiv.js',
     ], mix.config.publicPath + '/js')
     .copyDirectory('source/_assets/img', mix.config.publicPath + '/img')
     // .options({

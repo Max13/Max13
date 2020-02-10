@@ -15,28 +15,12 @@
 
     <title>Adnan RIHAN: Architecte Informatique, Développeur Full-Stack, Cryptographe et Pilote</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="{{ mix('css/bootstrap.min.css', 'assets/build') }}" rel="stylesheet">
-
     <!-- Custom Google Web Font -->
-    <link href="{{ mix('css/font-awesome.min.css', 'assets/build') }}" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
 
-    <!-- General CSS-->
-    <link href="{{ mix('css/general.css', 'assets/build') }}" rel="stylesheet">
-
-    <!-- Owl-Carousel -->
-    <link href="{{ mix('css/owl.custom.css', 'assets/build') }}" rel="stylesheet">
-    <link href="{{ mix('css/owl.carousel.css', 'assets/build') }}" rel="stylesheet">
-    <link href="{{ mix('css/owl.theme.css', 'assets/build') }}" rel="stylesheet">
-    <link href="{{ mix('css/style.css', 'assets/build') }}" rel="stylesheet">
-    <link href="{{ mix('css/animate.css', 'assets/build') }}" rel="stylesheet">
-
-    <!-- Magnific Popup core CSS file -->
-    <link rel="stylesheet" href="{{ mix('css/magnific-popup.css', 'assets/build') }}">
-
-    <script src="{{ mix('js/modernizr-2.8.3.min.js', 'assets/build') }}"></script>
+    <!-- Vendor CSS (integrated by Flatfy) -->
+    <link href="{{ mix('css/vendor.css', 'assets/build') }}" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="{{ mix('css/custom.css', 'assets/build') }}" rel="stylesheet">
@@ -233,12 +217,8 @@
     </footer><!-- /footer -->
 
     <!-- JavaScript -->
-    <script src="{{ mix('js/jquery-1.10.2.js', 'assets/build') }}"></script>
-    <script src="{{ mix('js/bootstrap.min.js', 'assets/build') }}"></script>
-    <script src="{{ mix('js/owl.carousel.js', 'assets/build') }}"></script>
-    <script src="{{ mix('js/script.js', 'assets/build') }}"></script>
+    <script src="{{ mix('js/vendor.js', 'assets/build') }}"></script>
     <!-- StikyMenu -->
-    <script src="{{ mix('js/stickUp.min.js', 'assets/build') }}"></script>
     <script type="text/javascript">
         jQuery(function($) {
             $(document).ready(function() {
@@ -254,16 +234,7 @@
                 });
             });
         });
+        new WOW().init();
     </script>
-    <!-- Smoothscroll -->
-    <script type="text/javascript" src="{{ mix('js/jquery.corner.js', 'assets/build') }}"></script>
-    <script src="{{ mix('js/wow.min.js', 'assets/build') }}"></script>
-    <script>
-     new WOW().init();
-    </script>
-    <script src="{{ mix('js/classie.js', 'assets/build') }}"></script>
-    <script src="{{ mix('js/uiMorphingButton_inflow.js', 'assets/build') }}"></script>
-    <!-- Magnific Popup core JS file -->
-    <script src="{{ mix('js/jquery.magnific-popup.js', 'assets/build') }}"></script>
 </body>
 </html>

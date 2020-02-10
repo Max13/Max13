@@ -1,0 +1,157 @@
+.intro-header {
+    min-height: 580px;
+
+    .self {
+        position: unset;
+        top: 1em;
+    }
+}
+
+.continue {
+    width: 50px;
+}
+
+.dedication {
+    color: #34495e;
+}
+
+.h1_home {
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+.lead .btn-xs {
+    font-size: 20px;
+}
+
+.h2_home, .h3_home, .h4_home, .h5_home, .wrap_title p {
+    font-weight: 300;
+}
+
+.intro-social-buttons li {
+    display: inline-block !important;
+    padding-left: .2em !important;
+    padding-right: .2em !important;
+}
+
+// Margins
+$margins: 1, 2, 3, 4;
+
+@each $margin in $margins {
+    .mt-#{$margin} {
+        margin-top: #{$margin}em;
+    }
+}
+// /Margins
+
+.wrap_title {
+    margin-bottom: 3em;
+}
+
+#whoami .lead {
+    margin-bottom: .5em;
+}
+
+a {
+    text-decoration: underline;
+}
+
+footer.banner {
+    background: unset;
+    background-color: #34495e;
+    color: #fff;
+    padding: 1.5em 2.5em;
+
+    a {
+        color: #fff;
+
+        &:hover {
+            color: #1abc9c;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+        line-height: unset;
+
+        &.faded {
+            color: #89AACB;
+        }
+    }
+}
+
+@media only screen {
+    @mixin bottom-continue {
+        bottom: 8%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+
+    // XXS (iPhone SE)
+    @media (max-width: 324px) {
+        .intro-header {
+            min-height: 600px;
+        }
+    }
+
+    // XS
+    @media (max-width: 767px) {
+        // Height >= 580
+        @media (min-height: 580px) {
+            .intro-header .continue {
+                @include bottom-continue;
+            }
+        }
+
+        .button_down {
+            display: unset;
+        }
+
+        .col-sm-4 {
+            margin-bottom: 3em;
+        }
+    }
+
+    // SM and up
+    @media (min-width: 768px) {
+        // Height >= 620
+        @media (min-height: 620px) {
+            .intro-header .continue {
+                @include bottom-continue;
+            }
+        }
+
+        .continue {
+            margin-top: 2em;
+        }
+
+        .h1_home {
+            font-size: 50px;
+        }
+
+        .intro-header {
+            min-height: 620px;
+        }
+
+        .intro-social-buttons {
+            margin-top: 2em;
+
+            li {
+                padding-left: .7em !important;
+                padding-right: .7em !important;
+            }
+        }
+
+        #whoami .row + .row {
+            margin-top: 3em;
+        }
+    }
+
+    // MD and up
+    @media (min-width: 960px) {
+        .h1_home {
+            font-size: 60px;
+        }
+    }
+}

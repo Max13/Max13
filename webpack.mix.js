@@ -11,7 +11,7 @@ mix.webpackConfig({
     ]
 });
 
- mix//.sass('source/_assets/sass/main.scss', 'css')
+ mix.sass('source/_assets/scss/custom.scss', mix.config.publicPath + '/css')
     .styles([
         'source/_assets/css/bootstrap.min.css',
         'source/_assets/css/font-awesome.min.css',
@@ -23,7 +23,6 @@ mix.webpackConfig({
         'source/_assets/css/animate.css',
         'source/_assets/css/magnific-popup.css',
     ], mix.config.publicPath + '/css/vendor.css')
-    .styles('source/_assets/css/custom.css', mix.config.publicPath + '/css/custom.css')
     .copy([
         'source/_assets/fonts/flat-ui-icons-regular.eot',
         'source/_assets/fonts/flat-ui-icons-regular.svg',
@@ -60,7 +59,7 @@ mix.webpackConfig({
         'source/_assets/js/html5shiv.js',
     ], mix.config.publicPath + '/js')
     .copyDirectory('source/_assets/img', mix.config.publicPath + '/img')
-    // .options({
-    //     processCssUrls: false,
-    // })
+    .options({
+        processCssUrls: false,
+    })
     .version();

@@ -1,4 +1,7 @@
-@if (!$page->production)
 User-agent: *
+@if ($page->production)
+Disallow: /getEmail.php
+Disallow: /storage/
+@else
 Disallow: /
 @endif

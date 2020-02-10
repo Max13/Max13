@@ -10,7 +10,7 @@
     <meta name="author" content="Adnan RIHAN">
     <meta name="language" content="fr">
     <meta name="description" content="Bienvenu sur ma page de présentation: Adnan RIHAN – Architecte Informatique, Développeur Full-Stack, Cryptographe et Pilote d'avion. Je conçois et développe des architectures et solutions de bureau en C/C++/Qt, Web en PHP/NodeJS (Laravel), serveurs headless (Unix et Linux), Administration de réseaux et systèmes mais aussi frontend (HTML/CSS/JS, Bootstrap, VueJS...) bien que ce ne soit pas ma spécialité. En tant que cryptographe, je conçois également des systèmes d'authentification, chiffrement et d'échange de données sécurisées. Pilote d'avion et musicien le reste du temps, j'aime donc voyager.">
-    <meta name="keywords" content="Développeur, Programmeur, C, C++, Qt, Laravel, Linux, Unix, Bash, Shell, Serveur, Headless, Webapp, Web, Applications de bureau, Architecture système, Ingénieur Système, Cryptographe, PHP, PHP5, PHP7, JS, HTML, HTML5, CSS, CSS2, CSS3, Crypto, Cryptographie">
+    <meta name="keywords" content="Développeur, Programmeur, C, C++, Qt, Laravel, Linux, Unix, Bash, Shell, Serveur, Headless, Webapp, Web, Applications de bureau, Architecture système, Ingénieur Système, Cryptographe, PHP, PHP5, PHP7, JS, HTML, HTML5, CSS, CSS2, CSS3, javascript, bootstrap, vuejs, Crypto, Cryptographie, QCA">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
     <title>Adnan RIHAN: Architecte Informatique, Développeur Full-Stack, Cryptographe et Pilote</title>

@@ -34,6 +34,17 @@
     padding-right: .2em !important;
 }
 
+.menuItem {
+    &.stick-top {
+        position: fixed;
+        top: 0;
+    }
+
+    img {
+        height: 1.5em;
+    }
+}
+
 // Margins
 $margins: 1, 2, 3, 4;
 

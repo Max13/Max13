@@ -117,6 +117,7 @@
                 <ul class="nav navbar-nav">
                     <li class="menuItem"><a href="#whoami">A propos de moi</a></li>
                     <li class="menuItem"><a href="#contact">Contact</a></li>
+                    <li class="menuItem flag stick-top"><a href="/us"><img src="/assets/build/img/icon/flag-us.svg" alt="Drapeau US"></a></li>
                 </ul>
             </div>
 
@@ -230,9 +231,11 @@
                                 <li><img class="credit" src="/assets/build/img/icon/blueprint.svg" alt="Plan"> par <a href="https://www.iconfinder.com/Ruslancorel" _target="_blank">Rudez Studio</a></li>
                                 <li><img class="credit" src="/assets/build/img/icon/fullstack.svg" alt="Fullstack"> par <a href="https://www.iconfinder.com/WHCompare" _target="_blank">Alexiuz AS</a></li>
                                 <li><img class="credit" src="/assets/build/img/icon/cryptography.svg" alt="Cryptographie"> par <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> de <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></li>
-                                <li><img class="credit" src="/assets/build/img/icon/home-automation.svg" alt="Domotique"> par <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons" _target="blank">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon" _target="blank">www.flaticon.com</a></li>
+                                <li><img class="credit" src="/assets/build/img/icon/home-automation.svg" alt="Domotique"> par <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons" _target="blank">Smashicons</a> de <a href="https://www.flaticon.com/" title="Flaticon" _target="blank">www.flaticon.com</a></li>
                                 <li><img class="credit" src="/assets/build/img/icon/congo.svg" alt="République du Congo"> par <a href="https://www.flaticon.com/authors/freepik" title="Freepik" _target="blank">Freepik</a> de <a href="https://www.flaticon.com/" title="Flaticon" _target="blank">www.flaticon.com</a></li>
                                 <li><img class="credit" src="/assets/build/img/icon/pilot.svg" alt="Pilote privé"> par <a href="https://www.iconfinder.com/laurareen" _target="blank">Laura Reen</a></li>
+                                <li><img class="credit" src="/assets/build/img/icon/flag-fr.svg" alt="Drapeau FR"> par <a href="https://www.iconfinder.com/Mr.hopnguyen" _target="blank">Hopnguyen Mr</a></li>
+                                <li><img class="credit" src="/assets/build/img/icon/flag-us.svg" alt="Drapeau US"> par <a href="https://www.iconfinder.com/Mr.hopnguyen" _target="blank">Hopnguyen Mr</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -249,6 +252,17 @@
         jQuery(function($) {
             $(document).ready(function() {
                 $('.navbar-default').stickUp();
+
+                $('.navbar-default .flag').each(function () {
+                    let $this = $(this),
+                        $clone = $this.clone();
+
+                    $this.addClass('invisible')
+                         .removeClass('stick-top');
+
+                    $clone.offset({left: $this.offset().left - $(window).scrollLeft()})
+                          .appendTo($this.parent());
+                });
 
                 $('#owo').one('click', e => {
                     $.get('/getEmail.php')

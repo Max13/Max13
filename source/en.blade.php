@@ -8,9 +8,9 @@ locales:
     alt: FR Flag
 
 author: Adnan RIHAN
-description: "Welcome to my personnal website: Adnan RIHAN – IT Architect, Full-Stack Developper, Cryptographer and Pilot. I design and develop architectures and desktop solutions in C/C++/Qt, Web in PHP/NodeJS (Laravel), headless servers (Unix and Linux), Network and Systems Administration but also frontend (HTML/CSS/JS, Bootstrap, VueJS…) although it is not my specialty. As a cryptographer, I also design authentication, encryption and secure data exchange systems. Pilot and musician the rest of the time, I like to travel."
-keywords: Developper, Programmer, C, C++, Qt, Laravel, Linux, Unix, Bash, Shell, Server, Headless, Webapp, Web, Desktop applications, System Architecture, System Engineering, Cryptographer, PHP, PHP5, PHP7, JS, HTML, HTML5, CSS, CSS2, CSS3, javascript, bootstrap, vuejs, Crypto, Cryptography, QCA
-title: "Adnan RIHAN: IT Architect, Full-Stack Developper, Cryptographer and Pilot"
+description: "Welcome to my personnal website: Adnan RIHAN – IT Architect, Full-Stack Developer, Cryptographer and Pilot. I design and develop architectures and desktop solutions in C/C++/Qt, Web in PHP/NodeJS (Laravel), headless servers (Unix and Linux), Network and Systems Administration but also frontend (HTML/CSS/JS, Bootstrap, VueJS…) although it is not my specialty. As a cryptographer, I also design authentication, encryption and secure data exchange systems. Pilot and musician the rest of the time, I like to travel."
+keywords: Developer, Programmer, C, C++, Qt, Laravel, Linux, Unix, Bash, Shell, Server, Headless, Webapp, Web, Desktop applications, System Architecture, System Engineering, Cryptographer, PHP, PHP5, PHP7, JS, HTML, HTML5, CSS, CSS2, CSS3, javascript, bootstrap, vuejs, Crypto, Cryptography, QCA
+title: "Adnan RIHAN: IT Architect, Full-Stack Developer, Cryptographer and Pilot"
 
 jobTitle: IT Architect, Full-Stack Developer, Cryptographer and Pilot
 homeSubtitle: The background is there, just to make it beautiful
@@ -25,7 +25,7 @@ aboutMeBlocks:
 
   - title: Full-Stack
     icon: fullstack.svg
-    alt: Full-Stack Developper
+    alt: Full-Stack Developer
     lead: From the back-end to the front-end, using <abbr title="Application Programming Interface">API</abbr>s hitting database replicated on the moon while sending notifications on the bathroom TV.
     subLead: Html/CSS/JS (Bootstrap/jQuery/VueJS/Apache Cordova), PHP (Laravel ++), MySQL/Sqlite, C/C++ (<i>Qt Ambassador</i>), Ruby (Few homebrew packages)
 

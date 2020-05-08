@@ -2,8 +2,10 @@
 extends: _layouts.index
 
 locale: en
+territory: US
 locales:
   - lang: fr
+    territory: FR
     icon: flag-fr.svg
     alt: FR Flag
 

@@ -4,7 +4,7 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="{{ $page->locale }}"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9" lang="{{ $page->locale }}"> <![endif]-->
 <!--[if gt IE 9]><!-->
-<html><!--<![endif]-->
+<html prefix="og: http://ogp.me/ns#"><!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta name="author" content="{{ $page->author }}">
@@ -12,6 +12,24 @@
     <meta name="description" content="{{ $page->description }}">
     <meta name="keywords" content="{{ $page->keywords }}">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <meta property="og:type" content="profile">
+    <meta property="og:first_name" content="Adnan">
+    <meta property="og:last_name" content="RIHAN">
+    <meta property="og:username" content="Max13">
+    <meta property="og:gender" content="male">
+    <meta property="og:title" content="{{ $page->title }}">
+    <meta property="og:url" content="{{ $page->baseUrl }}">
+    <meta property="og:image" content="{{ $page->baseUrl }}/assets/build/img/portrait.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="216">
+    <meta property="og:image:height" content="216">
+    <meta property="og:image:alt" content="Portrait">
+    <meta property="og:description" content="{{ $page->description }}">
+    <meta property="og:locale" content="{{ $page->locale.'_'.$page->territory }}">
+    @foreach ($page->locales as $locale)
+    <meta property="og:locale:alternate" content="{{ $locale->lang.'_'.$locale->territory }}">
+    @endforeach
 
     <title>{{ $page->title }}</title>
 

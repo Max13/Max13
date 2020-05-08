@@ -104,6 +104,11 @@
                         <i class="fa fa-linkedin-square fa-inverse fa-3x" aria-hidden="true"></i>
                     </a>
                 </li>
+                <li>
+                    <a href="https://bimoko.osc.cg/" class="swing wow fadeIn" data-wow-delay="1.2s" title="Podcast">
+                        <i class="fa fa-podcast fa-inverse fa-3x" aria-hidden="true"></i>
+                    </a>
+                </li>
             </ul>
             <h5 class="h5_home wow fadeIn hidden-xs mt-2" data-wow-delay="2s"><i>{{ $page->homeSubtitle }}</i></h5>
         </div>

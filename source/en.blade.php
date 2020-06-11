@@ -52,7 +52,7 @@ aboutMeBlocks:
     icon: pilot.svg
     alt: Private Pilot
     lead: License in progress.
-    subLead: 30:29 and counting
+    subLead: 48:32 and counting
 
 contactTitle: Contact
 contactSubtitle: If the social networks are not enough

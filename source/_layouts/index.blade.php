@@ -80,32 +80,32 @@
             <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">{{ $page->jobTitle }}.</h3>
             <ul class="list-inline intro-social-buttons">
                 <li>
-                    <a href="https://github.com/Max13" class="swing wow fadeIn" data-wow-delay="1.2s" title="Github">
+                    <a href="https://github.com/Max13" class="swing wow fadeIn" data-wow-delay="1.2s" title="Github" target="_blank">
                         <i class="fa fa-github fa-inverse fa-3x" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/_Max13" class="swing wow fadeIn" data-wow-delay="1.2s" title="Twitter">
+                    <a href="https://twitter.com/_Max13" class="swing wow fadeIn" data-wow-delay="1.2s" title="Twitter" target="_blank">
                         <i class="fa fa-twitter fa-inverse fa-3x" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://t.me/AdnanRIHAN" class="swing wow fadeIn" data-wow-delay="1.2s" title="Telegram">
+                    <a href="https://t.me/AdnanRIHAN" class="swing wow fadeIn" data-wow-delay="1.2s" title="Telegram" target="_blank">
                         <i class="fa fa-telegram fa-inverse fa-3x" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://keybase.io/max13/key.asc" class="swing wow fadeIn" data-wow-delay="1.2s" title="Clé publique GPG">
+                    <a href="https://keybase.io/max13/key.asc" class="swing wow fadeIn" data-wow-delay="1.2s" title="Clé publique GPG" target="_blank">
                         <i class="fa fa-key fa-inverse fa-3x" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/adnan-rihan-209b1097" class="swing wow fadeIn" data-wow-delay="1.2s" title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/adnan-rihan-209b1097" class="swing wow fadeIn" data-wow-delay="1.2s" title="LinkedIn" target="_blank">
                         <i class="fa fa-linkedin-square fa-inverse fa-3x" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://bimoko.osc.cg/" class="swing wow fadeIn" data-wow-delay="1.2s" title="Podcast">
+                    <a href="https://bimoko.osc.cg/" class="swing wow fadeIn" data-wow-delay="1.2s" title="Podcast" target="_blank">
                         <i class="fa fa-podcast fa-inverse fa-3x" aria-hidden="true"></i>
                     </a>
                 </li>

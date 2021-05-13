@@ -52,7 +52,7 @@ aboutMeBlocks:
     icon: pilot.svg
     alt: Pilote Privé
     lead: Licence en cours.
-    subLead: 48:32 au compteur
+    subLead: 51:38 au compteur
 
 contactTitle: Contact
 contactSubtitle: Si les réseaux sociaux ne suffisent pas

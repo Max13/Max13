@@ -24,9 +24,11 @@ jobs:
           SERVER_RELEASE_PATH="$SERVER_RELEASES_PATH/$(date +%s)"
           SERVER_STORAGE_PATH="$SERVER_BASE_PATH/storage"
 
-          echo "::set-env name=SERVER_RELEASES_PATH::$SERVER_RELEASES_PATH"
-          echo "::set-env name=SERVER_RELEASE_PATH::$SERVER_RELEASE_PATH"
-          echo "::set-env name=SERVER_STORAGE_PATH::$SERVER_STORAGE_PATH"
+          echo "SERVER_RELEASES_PATH=$SERVER_RELEASES_PATH" >> $GITHUB_ENV
+          echo "SERVER_RELEASE_PATH=$SERVER_RELEASE_PATH" >> $GITHUB_ENV
+          echo "SERVER_STORAGE_PATH=$SERVER_STORAGE_PATH" >> $GITHUB_ENV
+
+          sudo update-alternatives --set php /usr/bin/php7.1
 
       - uses: actions/checkout@v2
 

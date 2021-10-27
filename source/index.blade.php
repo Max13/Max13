@@ -51,8 +51,8 @@ aboutMeBlocks:
   - title: Pilote privé
     icon: pilot.svg
     alt: Pilote Privé
-    lead: Licence en cours.
-    subLead: 51:38 au compteur
+    #lead: Licence en cours.
+    #subLead: 54:44 au compteur
 
 contactTitle: Contact
 contactSubtitle: Si les réseaux sociaux ne suffisent pas

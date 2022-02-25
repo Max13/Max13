@@ -54,6 +54,12 @@ aboutMeBlocks:
     #lead: License in progress.
     #subLead: 54:44 and counting
 
+  - title: Mikrotik Certified
+    icon: mikrotik/mtcna.svg
+    alt: MikroTik Certified Network Associate
+    lead: MikroTik Certified Network Associate (MTCNA)
+    subLead: Also MikroTik Certified IPv6 Engineer (MTCIPv6E), MikroTik Certified Routing Engineer (MTCRE), MikroTik Certified Traffic Control Engineer (MTCRE) and MikroTik Certified Wireless Engineer (MTCWE)
+
 contactTitle: Contact
 contactSubtitle: If the social networks are not enough
 contactBtn: Show my e-mail

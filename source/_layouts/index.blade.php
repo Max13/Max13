@@ -246,13 +246,16 @@
                           .appendTo($this.parent());
                 });
 
-                $('#owo').one('click', e => {
-                    $.get('/getEmail.php')
-                     .done(email => {
-                        let $link = $('<p><b><a href="mailto:' + email +'">' + email + '</a></b></p>');
+                // $('#owo').one('click', e => {
+                //     $.get('/getEmail.php')
+                //      .done(email => {
+                //         let $link = $('<p><b><a href="mailto:' + email +'">' + email + '</a></b></p>');
 
-                        $(e.target).replaceWith($link);
-                     });
+                //         $(e.target).replaceWith($link);
+                //      });
+                // });
+                $('#owo').one('click', e => {
+                    $(e.target).replaceWith('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScV8j4caLDGU4Lab-MIIqkbuZXR98_ua3uuIprtJzczFZItbQ/viewform?embedded=true" height="780" width="100%" frameborder="0">Chargement…</iframe>');
                 });
             });
         });

@@ -28,7 +28,7 @@ jobs:
           echo "SERVER_RELEASE_PATH=$SERVER_RELEASE_PATH" >> $GITHUB_ENV
           echo "SERVER_STORAGE_PATH=$SERVER_STORAGE_PATH" >> $GITHUB_ENV
 
-          sudo update-alternatives --set php /usr/bin/php7.1
+          sudo update-alternatives --set php /usr/bin/php7.2
 
       - uses: actions/checkout@v2
 

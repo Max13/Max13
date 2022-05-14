@@ -54,7 +54,7 @@ aboutMeBlocks:
     #lead: License in progress.
     #subLead: 54:44 and counting
 
-  - title: Mikrotik Certified
+  - title: MikroTik Certified Consultant
     icon: mikrotik/mtcna.svg
     alt: MikroTik Certified Network Associate
     lead: MikroTik Certified Network Associate (MTCNA)

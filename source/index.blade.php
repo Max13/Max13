@@ -54,9 +54,9 @@ aboutMeBlocks:
     #lead: Licence en cours.
     #subLead: 54:44 au compteur
 
-  - title: Certifié Mikrotik
+  - title: Consultant Certifié MikroTik
     icon: mikrotik/mtcna.svg
-    alt: Administrateur Réseau Mikrotik Certifié
+    alt: Administrateur Réseau MikroTik Certifié
     lead: MikroTik Certified Network Associate (MTCNA)
     subLead: Aussi MikroTik Certified IPv6 Engineer (MTCIPv6E), MikroTik Certified Routing Engineer (MTCRE), MikroTik Certified Traffic Control Engineer (MTCRE) and MikroTik Certified Wireless Engineer (MTCWE)
 

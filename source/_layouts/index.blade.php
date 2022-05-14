@@ -161,14 +161,14 @@
             @foreach ($page->aboutMeBlocks->chunk(3) as $blocks)
             <div class="row">
                 @foreach ($blocks as $block)
-                <div class="col-sm-4 col-sm-offset-{{ (12 - 4 * $loop->count) / 2 }} wow fadeInDown text-center">
+                <div class="col-sm-{{ min(6, 12 / $loop->count) }} col-sm-offset-{{ $loop->count === 1 ? 3 : 0 }} wow fadeInDown text-center">
                     <img src="/assets/build/img/icon/{{ $block->icon }}" alt="{{ $block->alt }}">
                     <h3>{!! $block->title !!}</h3>
                     <p class="lead">{!! $block->lead !!}</p>
                     @if ($block->subLead)
                     <p class="small">{!! $block->subLead !!}</p>
                     @endif
-                </div><!-- /.col-sm-4 -->
+                </div><!-- /.col-sm-* -->
                 @endforeach
             </div><!-- /.row -->
             @endforeach

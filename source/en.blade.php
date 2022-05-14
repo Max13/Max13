@@ -60,6 +60,12 @@ aboutMeBlocks:
     lead: MikroTik Certified Network Associate (MTCNA)
     subLead: Also MikroTik Certified IPv6 Engineer (MTCIPv6E), MikroTik Certified Routing Engineer (MTCRE), MikroTik Certified Traffic Control Engineer (MTCRE) and MikroTik Certified Wireless Engineer (MTCWE)
 
+  - title: MikroTik Academy Trainer
+    icon: mikrotik/mtactr.svg
+    alt: MikroTik Certified Academy Trainer
+    lead: MikroTik Certified Academy Trainer
+    subLead: Academy Trainer in ITIC Paris, higher education institution.
+
 contactTitle: Contact
 contactSubtitle: If the social networks are not enough
 contactBtn: Show my e-mail

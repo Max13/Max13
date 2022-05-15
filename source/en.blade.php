@@ -66,6 +66,11 @@ aboutMeBlocks:
     lead: MikroTik Certified Academy Trainer
     subLead: Academy Trainer in ITIC Paris, higher education institution.
 
+  - title: MikroTik Authorized Reseller
+    icon: mikrotik/reseller.svg
+    alt: MikroTik Authorized Reseller
+    subLead: <a href="/en/mt-shop">More info</a>
+
 contactTitle: Contact
 contactSubtitle: If the social networks are not enough
 contactBtn: Show my e-mail

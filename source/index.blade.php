@@ -66,6 +66,11 @@ aboutMeBlocks:
     lead: MikroTik Certified Academy Trainer
     subLead: Formateur académique au sein de l'ITIC Paris, établissement d'enseignement supérieur.
 
+  - title: Revendeur Agréé MikroTik
+    icon: mikrotik/reseller.svg
+    alt: Revendeur Agréé MikroTik
+    subLead: <a href="/mt-shop">Plus d'info</a>
+
 contactTitle: Contact
 contactSubtitle: Si les réseaux sociaux ne suffisent pas
 contactBtn: Afficher mon e-mail

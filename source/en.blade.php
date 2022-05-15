@@ -58,7 +58,7 @@ aboutMeBlocks:
     icon: mikrotik/mtcna.svg
     alt: MikroTik Certified Network Associate
     lead: MikroTik Certified Network Associate (MTCNA)
-    subLead: Also MikroTik Certified IPv6 Engineer (MTCIPv6E), MikroTik Certified Routing Engineer (MTCRE), MikroTik Certified Traffic Control Engineer (MTCRE) and MikroTik Certified Wireless Engineer (MTCWE)
+    subLead: Also MikroTik Certified IPv6 Engineer (MTCIPv6E), MikroTik Certified Routing Engineer (MTCRE), MikroTik Certified Traffic Control Engineer (MTCTCE) and MikroTik Certified Wireless Engineer (MTCWE)
 
   - title: MikroTik Academy Trainer
     icon: mikrotik/mtactr.svg

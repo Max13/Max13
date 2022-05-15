@@ -72,6 +72,7 @@
         <div id="status"></div>
     </div>
 
+    @if ($page->isIndex())
     <!-- FullScreen -->
     <div class="intro-header">
         <div class="text-center self">
@@ -122,6 +123,8 @@
             </div>
         </div>
     </div>
+    <!-- /.intro-header -->
+    @endif
 
     <!-- NavBar-->
     <nav class="navbar-default" role="navigation">

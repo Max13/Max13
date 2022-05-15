@@ -1,5 +1,5 @@
 ---
-extends: _layouts.index
+extends: _layouts.master
 
 locale: fr
 territory: FR

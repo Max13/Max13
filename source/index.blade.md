@@ -1,20 +1,6 @@
 ---
 extends: _layouts.master
 
-locale: fr
-territory: FR
-locales:
-  - lang: en
-    territory: US
-    icon: flag-us.svg
-    alt: Drapeau US
-
-author: Adnan RIHAN
-description: "Bienvenu sur mon site personnel: Adnan RIHAN – Architecte Informatique, Développeur Full-Stack, Cryptographe et Pilote d'avion. Je conçois et développe des architectures et solutions de bureau en C/C++/Qt, Web en PHP/NodeJS (Laravel), serveurs headless (Unix et Linux), Administration de réseaux et systèmes mais aussi frontend (HTML/CSS/JS, Bootstrap, VueJS…) bien que ce ne soit pas ma spécialité. En tant que cryptographe, je conçois également des systèmes d'authentification, chiffrement et d'échange de données sécurisées. Pilote d'avion et musicien le reste du temps, j'aime donc voyager."
-keywords: "Développeur, Programmeur, C, C++, Qt, Laravel, Linux, Unix, Bash, Shell, Serveur, Headless, Webapp, Web, Applications de bureau, Architecture système, Ingénieur Système, Cryptographe, PHP, PHP5, PHP7, JS, HTML, HTML5, CSS, CSS2, CSS3, javascript, bootstrap, vuejs, Crypto, Cryptographie, QCA"
-title: "Adnan RIHAN: Architecte Informatique, Développeur Full-Stack, Cryptographe et Pilote"
-
-jobTitle: Architecte Informatique, Développeur Full-Stack, Cryptographe et Pilote
 homeSubtitle: Le fond, c'est juste pour faire beau
 
 aboutMeTitle: A propos de moi

@@ -9,8 +9,8 @@
     <meta charset="utf-8">
     <meta name="author" content="{{ $page->author }}">
     <meta name="language" content="{{ $page->locale }}">
-    <meta name="description" content="{{ $page->description }}">
-    <meta name="keywords" content="{{ $page->keywords }}">
+    <meta name="description" content="{{ $page->locales->{$page->locale}->description }}">
+    <meta name="keywords" content="{{ $page->locales->{$page->locale}->keywords }}">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
     <meta property="og:type" content="profile">
@@ -18,20 +18,20 @@
     <meta property="og:last_name" content="RIHAN">
     <meta property="og:username" content="Max13">
     <meta property="og:gender" content="male">
-    <meta property="og:title" content="{{ $page->title }}">
+    <meta property="og:title" content="{{ $page->locales->{$page->locale}->title }}">
     <meta property="og:url" content="{{ $page->baseUrl }}">
     <meta property="og:image" content="{{ $page->baseUrl }}/assets/build/img/portrait.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="216">
     <meta property="og:image:height" content="216">
     <meta property="og:image:alt" content="Portrait">
-    <meta property="og:description" content="{{ $page->description }}">
-    <meta property="og:locale" content="{{ $page->locale.'_'.$page->territory }}">
+    <meta property="og:description" content="{{ $page->locales->{$page->locale}->description }}">
+    <meta property="og:locale" content="{{ $page->locale.'_'.$page->locales->{$page->locale}->territory }}">
     @foreach ($page->locales as $locale)
     <meta property="og:locale:alternate" content="{{ $locale->lang.'_'.$locale->territory }}">
     @endforeach
 
-    <title>{{ $page->title }}</title>
+    <title>{{ $page->locales->{$page->locale}->title }}</title>
 
     <!-- Custom Google Web Font -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
@@ -144,13 +144,14 @@
                     <li class="menuItem"><a href="#whoami">{{ $page->aboutMeTitle }}</a></li>
                     <li class="menuItem"><a href="#contact">{{ $page->contactTitle }}</a></li>
                     @foreach ($page->locales as $locale)
+                        @continue ($locale->lang === $page->locale)
                     <li class="menuItem flag stick-top"><a href="/{{ $locale->lang }}"><img src="/assets/build/img/icon/{{ $locale->icon }}" alt="{{ $locale->alt }}"></a></li>
                     @endforeach
                 </ul>
             </div>
 
         </div>
-    </nav>
+    </nav> <!-- /.navbar-default -->
 
     <!-- Who am I -->
     <div id="whoami" class="content-section-b" style="border-top: 0">

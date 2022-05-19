@@ -41,20 +41,21 @@ aboutMeBlocks:
     #subLead: 54:44 au compteur
 
   - title: Consultant Certifié MikroTik
-    icon: mikrotik/mtcna.svg
-    alt: Administrateur Réseau MikroTik Certifié
-    lead: MikroTik Certified Network Associate (MTCNA)
-    subLead: Aussi MikroTik Certified IPv6 Engineer (MTCIPv6E), MikroTik Certified Routing Engineer (MTCRE), MikroTik Certified Traffic Control Engineer (MTCTCE) et MikroTik Certified Wireless Engineer (MTCWE)
+    icon: mikrotik/mtcx.svg
+    alt: Consultant Certifié MikroTik
+    imgClass: w-100
+    subLead: Network Associate, IPv6 Engineer, Routing Engineer, Traffic Control Engineer, Wireless Engineer
 
   - title: Formateur Académique MikroTik
     icon: mikrotik/mtactr.svg
-    alt: Formateur Académique MikroTik Certifié
-    lead: MikroTik Certified Academy Trainer
+    alt: Formateur Académique MikroTik
+    imgClass: w-100
     subLead: Formateur académique au sein de l'ITIC Paris, établissement d'enseignement supérieur.
 
   - title: Revendeur Agréé MikroTik
     icon: mikrotik/reseller.svg
     alt: Revendeur Agréé MikroTik
+    imgClass: w-100
     subLead: <a href="/mt-shop">Plus d'info</a>
 
 contactTitle: Contact

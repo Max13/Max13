@@ -56,12 +56,6 @@ aboutMeBlocks:
     imgClass: maxw-100
     subLead: Formateur académique au sein de l'ITIC Paris, établissement d'enseignement supérieur.
 
-  - title: Revendeur Agréé MikroTik
-    icon: mikrotik/reseller.svg
-    alt: Revendeur Agréé MikroTik
-    imgClass: w-100
-    subLead: <a href="/mt-shop">Plus d'info</a>
-
 contactTitle: Contact
 contactSubtitle: Si les réseaux sociaux ne suffisent pas
 contactBtn: Afficher mon e-mail

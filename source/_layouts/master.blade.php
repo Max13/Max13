@@ -117,11 +117,12 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="banner">
         <div class="row">
-            <p class="col-xs-6 col-md-2 faded">{{ $page->author }}</p>
-            <p class="hidden-xs col-md-6 col-md-offset-1 dedication small text-center">{{ $page->dedication }}</p>
-            <p class="col-xs-6 col-md-1 col-md-offset-2"><a href="#" data-toggle="modal" data-target="#modal-credits">{{ $page->creditsTitle }}</a></p>
+            <p class="col-xs-3 faded text-left">{{ $page->author }}</p>
+            <p class="hidden-xs col-sm-6 dedication small text-center">{{ $page->dedication }}</p>
+            <p class="col-xs-3 col-xs-offset-6 col-sm-offset-0 text-right"><a href="#" data-toggle="modal" data-target="#modal-credits">{{ $page->creditsTitle }}</a></p>
         </div>
     </footer><!-- /footer -->
 

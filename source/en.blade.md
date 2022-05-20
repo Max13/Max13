@@ -3,6 +3,10 @@ extends: _layouts.master
 
 locale: en
 
+navbarLinks:
+  About me: '#whoami'
+  Contact: '#contact'
+
 homeSubtitle: The background is there, just to make it beautiful
 
 aboutMeTitle: About me

@@ -1,6 +1,10 @@
 ---
 extends: _layouts.master
 
+navbarLinks:
+  A propos de moi: '#whoami'
+  Contact: '#contact'
+
 homeSubtitle: Le fond, c'est juste pour faire beau
 
 aboutMeTitle: A propos de moi

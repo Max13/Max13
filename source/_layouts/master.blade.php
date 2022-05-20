@@ -76,31 +76,7 @@
     @includeWhen($page->isIndex(), '_layouts.jumbotron-me')
 
     <!-- NavBar-->
-    <nav class="navbar-default" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                {{-- <a class="navbar-brand" href="#home">Brand</a> --}}
-            </div>
-
-            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="menuItem"><a href="#whoami">{{ $page->aboutMeTitle }}</a></li>
-                    <li class="menuItem"><a href="#contact">{{ $page->contactTitle }}</a></li>
-                    @foreach ($page->locales as $locale)
-                        @continue ($locale->lang === $page->locale)
-                    <li class="menuItem flag stick-top"><a href="/{{ $locale->lang }}"><img src="/assets/build/img/icon/{{ $locale->icon }}" alt="{{ $locale->alt }}"></a></li>
-                    @endforeach
-                </ul>
-            </div>
-
-        </div>
-    </nav> <!-- /.navbar-default -->
+    @include('_layouts.navbar', ['links' => $page->navbarLinks]);
 
     <!-- Who am I -->
     <div id="whoami" class="content-section-b" style="border-top: 0">

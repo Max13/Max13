@@ -49,13 +49,13 @@ aboutMeBlocks:
   - title: MikroTik Certified Consultant
     icon: mikrotik/mtcx.svg
     alt: MikroTik Certified Consultant
-    imgClass: w-100
     subLead: Network Associate, IPv6 Engineer, Routing Engineer, Traffic Control Engineer, Wireless Engineer
 
   - title: MikroTik Academy Trainer
     icon: mikrotik/mtactr.svg
     alt: MikroTik Certified Academy Trainer
-    imgClass: w-100
+    imgDivClass: minh-100px
+    imgClass: maxw-100
     subLead: Academy Trainer in ITIC Paris, higher education institution.
 
   - title: MikroTik Authorized Reseller

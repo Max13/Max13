@@ -47,13 +47,13 @@ aboutMeBlocks:
   - title: Consultant Certifié MikroTik
     icon: mikrotik/mtcx.svg
     alt: Consultant Certifié MikroTik
-    imgClass: w-100
     subLead: Network Associate, IPv6 Engineer, Routing Engineer, Traffic Control Engineer, Wireless Engineer
 
   - title: Formateur Académique MikroTik
     icon: mikrotik/mtactr.svg
     alt: Formateur Académique MikroTik
-    imgClass: w-100
+    imgDivClass: minh-100px
+    imgClass: maxw-100
     subLead: Formateur académique au sein de l'ITIC Paris, établissement d'enseignement supérieur.
 
   - title: Revendeur Agréé MikroTik

@@ -91,7 +91,9 @@
             <div class="row">
                 @foreach ($blocks as $block)
                 <div class="col-sm-{{ min(6, 12 / $loop->count) }} col-sm-offset-{{ $loop->count === 1 ? 3 : 0 }} wow fadeInDown text-center">
-                    <img src="/assets/build/img/icon/{{ $block->icon }}" alt="{{ $block->alt }}" class="{{ $block->imgClass }}">
+                    <div class="{{ $block->imgDivClass }}">
+                        <img src="/assets/build/img/icon/{{ $block->icon }}" alt="{{ $block->alt }}" class="{{ $block->imgClass }}">
+                    </div>
                     <h3>{!! $block->title !!}</h3>
                     <p class="lead">{!! $block->lead !!}</p>
                     @if ($block->subLead)

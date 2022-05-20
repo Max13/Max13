@@ -72,9 +72,8 @@
         <div id="status"></div>
     </div>
 
-    {{-- @if ($page->isIndex()) --}}
+    <!-- Jumbotron with social media -->
     @includeWhen($page->isIndex(), '_layouts.jumbotron-me')
-    {{-- @endif --}}
 
     <!-- NavBar-->
     <nav class="navbar-default" role="navigation">

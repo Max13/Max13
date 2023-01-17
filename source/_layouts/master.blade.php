@@ -120,8 +120,17 @@
     <!-- Footer + Credits -->
     @include('_layouts.footer')
 
+    <!-- 3CX Live Chat -->
+    <call-us-selector phonesystem-url="https://iticparis.on3cx.fr" party="LiveChat956721" lang="{{ $page->locale }}" minimized="true" chat-delay="500"
+        @foreach ($page->locales->{$page->locale}->live_chat as $key => $val)
+        {{ $key }}="{{ $val }}"
+        @endforeach
+    ></call-us-selector>
+
     <!-- JavaScript -->
     <script src="{{ mix('js/vendor.js', 'assets/build') }}"></script>
+    <script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
+
     <!-- StikyMenu -->
     <script type="text/javascript">
         jQuery(function($) {

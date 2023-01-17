@@ -29,6 +29,12 @@ return [
             'description' => "Welcome to my personnal website: Adnan RIHAN – IT Architect, Full-Stack Developer, Cryptographer and Pilot. I design and develop architectures and desktop solutions in C/C++/Qt, Web in PHP/NodeJS (Laravel), headless servers (Unix and Linux), Network and Systems Administration but also frontend (HTML/CSS/JS, Bootstrap, VueJS…) although it is not my specialty. As a cryptographer, I also design authentication, encryption and secure data exchange systems. Pilot and musician the rest of the time, I like to travel.",
             'keywords' => 'Developer, Programmer, C, C++, Qt, Laravel, Linux, Unix, Bash, Shell, Server, Headless, Webapp, Web, Desktop applications, System Architecture, System Engineering, Cryptographer, PHP, PHP5, PHP7, JS, HTML, HTML5, CSS, CSS2, CSS3, javascript, bootstrap, vuejs, Crypto, Cryptography, QCA, MikroTik, Ingénieur Certifié MikroTik, MikroTik Certified Engineer, Consultant Certifié MikroTik, MikroTik Certified Consultant, MikroTik Certified Network Associate, MTCNA, MikroTik Certified IPv6 Engineer, MTCIPv6E, MikroTik Certified Routing Engineer, MTCRE, MikroTik Certified Traffic Control Engineer, MTCTCE, MikroTik Certified Wireless Engineer, MTCWE, MikroTik Certified Academy Trainer, MikroTik Authorized Reseller',
             'title' => "IT Architect, Full-Stack Developer, Cryptographer and Pilot",
+            'live_chat' => [
+                'authentication-message' => 'Who are you?',
+                'invite-message' => 'Hi, what can I do for you?',
+                'start-chat-button-text' => 'Chat',
+                'unavailable-message' => "I'm not online currently, but you can leave me a message and I will recontact you by e-mail!",
+            ],
         ],
     ],
 ];

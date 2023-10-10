@@ -51,12 +51,12 @@ aboutMeBlocks:
     alt: MikroTik Certified Consultant
     subLead: Network Associate, IPv6 Engineer, Routing Engineer, Traffic Control Engineer, Wireless Engineer
 
-  - title: MikroTik Academy Trainer
+  - title: MikroTik Certified Trainer
     icon: mikrotik/mtactr.svg
-    alt: MikroTik Certified Academy Trainer
+    alt: MikroTik Certified Trainer
     imgDivClass: minh-100px
     imgClass: maxw-100
-    subLead: Academy Trainer in ITIC Paris, higher education institution.
+    subLead: I can train and pass several MikroTik certifications to individuals, professionals and students. Mainly based at ITIC Paris, a higher education establishment located in the 20th district of Paris, I can also travel on site.
 
 contactTitle: Contact
 contactSubtitle: If the social networks are not enough

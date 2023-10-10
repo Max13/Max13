@@ -49,12 +49,12 @@ aboutMeBlocks:
     alt: Consultant Certifié MikroTik
     subLead: Network Associate, IPv6 Engineer, Routing Engineer, Traffic Control Engineer, Wireless Engineer
 
-  - title: Formateur Académique MikroTik
+  - title: Formateur Certifié MikroTik
     icon: mikrotik/mtactr.svg
-    alt: Formateur Académique MikroTik
+    alt: Formateur Certifié MikroTik
     imgDivClass: minh-100px
     imgClass: maxw-100
-    subLead: Formateur académique au sein de l'ITIC Paris, établissement d'enseignement supérieur.
+    subLead: Je peux former et faire passer plusieurs certifications MikroTik à des particuliers, professionels et étudiants. Principalement basé à l'établissement ITIC Paris, établissement d'enseignement supérieur situé dans le 20e à Paris, je peux aussi me déplacer sur site.
 
 contactTitle: Contact
 contactSubtitle: Si les réseaux sociaux ne suffisent pas

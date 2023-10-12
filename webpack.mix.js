@@ -1,17 +1,10 @@
-let mix = require('laravel-mix');
-let build = require('./tasks/build.js');
+const mix = require('laravel-mix');
+require('laravel-mix-jigsaw');
 
 mix.disableSuccessNotifications();
 mix.setPublicPath('source/assets/build');
-mix.webpackConfig({
-    plugins: [
-        build.jigsaw,
-        build.browserSync(),
-        build.watch(['source/**/*.md', 'source/**/*.php', 'source/**/*.scss', '!source/**/_tmp/*']),
-    ]
-});
-
- mix.sass('source/_assets/scss/custom.scss', mix.config.publicPath + '/css')
+ mix.jigsaw()
+    .sass('source/_assets/scss/custom.scss', 'css')
     .styles([
         'source/_assets/css/bootstrap.min.css',
         'source/_assets/css/font-awesome.min.css',
@@ -22,7 +15,7 @@ mix.webpackConfig({
         'source/_assets/css/style.css',
         'source/_assets/css/animate.css',
         'source/_assets/css/magnific-popup.css',
-    ], mix.config.publicPath + '/css/vendor.css')
+    ], 'css/vendor.css')
     .copy([
         'source/_assets/fonts/flat-ui-icons-regular.eot',
         'source/_assets/fonts/flat-ui-icons-regular.svg',
@@ -38,8 +31,8 @@ mix.webpackConfig({
         'source/_assets/fonts/glyphicons-halflings-regular.svg',
         'source/_assets/fonts/glyphicons-halflings-regular.ttf',
         'source/_assets/fonts/glyphicons-halflings-regular.woff',
-    ], mix.config.publicPath + '/fonts')
-    .copyDirectory('source/_assets/fonts/lato', mix.config.publicPath + '/fonts/lato')
+    ], 'fonts')
+    .copyDirectory('source/_assets/fonts/lato', 'fonts/lato')
     .scripts([
         'source/_assets/js/modernizr-2.8.3.min.js',
         'source/_assets/js/jquery-1.10.2.js',
@@ -52,13 +45,13 @@ mix.webpackConfig({
         'source/_assets/js/classie.js',
         'source/_assets/js/uiMorphingButton_inflow.js',
         'source/_assets/js/jquery.magnific-popup.js',
-    ], mix.config.publicPath + '/js/vendor.js')
+    ], 'js/vendor.js')
     .copy([
         'source/_assets/js/PIE_IE9.js',
         'source/_assets/js/PIE_IE678.js',
         'source/_assets/js/html5shiv.js',
-    ], mix.config.publicPath + '/js')
-    .copyDirectory('source/_assets/img', mix.config.publicPath + '/img')
+    ], 'js')
+    .copyDirectory('source/_assets/img', 'img')
     .options({
         processCssUrls: false,
     })

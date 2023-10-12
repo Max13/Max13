@@ -3,6 +3,7 @@ extends: _layouts.master
 
 navbarLinks:
   A propos de moi: '#whoami'
+  MikroTik: '#mikrotik'
   Contact: '#contact'
 
 homeSubtitle: Le fond, c'est juste pour faire beau
@@ -44,6 +45,9 @@ aboutMeBlocks:
     #lead: Licence en cours.
     #subLead: 54:44 au compteur
 
+mikrotikTitle: MikroTik
+mikrotikSubtitle:
+mikrotikBlocks:
   - title: Consultant Certifié MikroTik
     icon: mikrotik/mtcx.svg
     alt: Consultant Certifié MikroTik

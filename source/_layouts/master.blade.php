@@ -106,8 +106,36 @@
         </div>
     </div>
 
+    <!-- MikroTik -->
+    <div id="mikrotik" class="content-section-a" style="border-top: 0">
+        <div class="container">
+
+            <div class="text-center wrap_title" style="margin-bottom: 5em">
+                <h2>{{ $page->mikrotikTitle }}</h2>
+                <p><i>{{ $page->mikrotikSubtitle }}</i></p>
+            </div>
+
+            @foreach ($page->mikrotikBlocks->chunk(3) as $blocks)
+            <div class="row">
+                @foreach ($blocks as $block)
+                <div class="col-sm-{{ min(6, 12 / $loop->count) }} col-sm-offset-{{ $loop->count === 1 ? 3 : 0 }} wow fadeInDown text-center">
+                    <div class="{{ $block->imgDivClass }}">
+                        <img src="/assets/build/img/icon/{{ $block->icon }}" alt="{{ $block->alt }}" class="{{ $block->imgClass }}">
+                    </div>
+                    <h3>{!! $block->title !!}</h3>
+                    <p class="lead">{!! $block->lead !!}</p>
+                    @if ($block->subLead)
+                    <p class="small">{!! $block->subLead !!}</p>
+                    @endif
+                </div><!-- /.col-sm-* -->
+                @endforeach
+            </div><!-- /.row -->
+            @endforeach
+        </div>
+    </div>
+
     <!-- Contact -->
-    <div id="contact" class="content-section-a">
+    <div id="contact" class="content-section-b">
         <div class="container">
             <div class="text-center wrap_title">
                 <h2>{{ $page->contactTitle }}</h2>
@@ -122,9 +150,11 @@
 
     <!-- 3CX Live Chat -->
     <call-us-selector phonesystem-url="https://iticparis.on3cx.fr" party="LiveChat956721" lang="{{ $page->locale }}" minimized="true" chat-delay="500"
-        @foreach ($page->locales->{$page->locale}->live_chat as $key => $val)
-        {{ $key }}="{{ $val }}"
-        @endforeach
+        @if (isset($page->locales->{$page->locale}->live_chat))
+            @foreach ($page->locales->{$page->locale}->live_chat as $key => $val)
+            {{ $key }}="{{ $val }}"
+            @endforeach
+        @endif
     ></call-us-selector>
 
     <!-- JavaScript -->

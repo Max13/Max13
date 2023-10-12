@@ -5,6 +5,7 @@ locale: en
 
 navbarLinks:
   About me: '#whoami'
+  MikroTik: '#mikrotik'
   Contact: '#contact'
 
 homeSubtitle: The background is there, just to make it beautiful
@@ -46,6 +47,9 @@ aboutMeBlocks:
     #lead: License in progress.
     #subLead: 54:44 and counting
 
+mikrotikTitle: MikroTik
+mikrotikSubtitle:
+mikrotikBlocks:
   - title: MikroTik Certified Consultant
     icon: mikrotik/mtcx.svg
     alt: MikroTik Certified Consultant

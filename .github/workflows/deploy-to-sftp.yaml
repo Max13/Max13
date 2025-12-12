@@ -15,7 +15,7 @@ env:
 jobs:
   deploy:
     name: Deploy
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     steps:
 
       - name: Set env
@@ -27,8 +27,6 @@ jobs:
           echo "SERVER_RELEASES_PATH=$SERVER_RELEASES_PATH" >> $GITHUB_ENV
           echo "SERVER_RELEASE_PATH=$SERVER_RELEASE_PATH" >> $GITHUB_ENV
           echo "SERVER_STORAGE_PATH=$SERVER_STORAGE_PATH" >> $GITHUB_ENV
-
-          sudo update-alternatives --set php /usr/bin/php7.2
 
       - uses: actions/checkout@v2
 
@@ -44,7 +42,7 @@ jobs:
         run: npm i
 
       - name: Build website
-        run: npm run production
+        run: npm run prod
 
       - name: Add ssh key to container
         env:

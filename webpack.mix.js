@@ -15,7 +15,7 @@ mix.setPublicPath('source/assets/build');
         'source/_assets/css/style.css',
         'source/_assets/css/animate.css',
         'source/_assets/css/magnific-popup.css',
-    ], 'css/vendor.css')
+    ], 'source/assets/build/css/vendor.css')
     .copy([
         'source/_assets/fonts/flat-ui-icons-regular.eot',
         'source/_assets/fonts/flat-ui-icons-regular.svg',
@@ -31,8 +31,8 @@ mix.setPublicPath('source/assets/build');
         'source/_assets/fonts/glyphicons-halflings-regular.svg',
         'source/_assets/fonts/glyphicons-halflings-regular.ttf',
         'source/_assets/fonts/glyphicons-halflings-regular.woff',
-    ], 'fonts')
-    .copyDirectory('source/_assets/fonts/lato', 'fonts/lato')
+    ], 'source/assets/build/fonts')
+    .copyDirectory('source/_assets/fonts/lato', 'source/assets/build/fonts/lato')
     .scripts([
         'source/_assets/js/modernizr-2.8.3.min.js',
         'source/_assets/js/jquery-1.10.2.js',
@@ -45,13 +45,13 @@ mix.setPublicPath('source/assets/build');
         'source/_assets/js/classie.js',
         'source/_assets/js/uiMorphingButton_inflow.js',
         'source/_assets/js/jquery.magnific-popup.js',
-    ], 'js/vendor.js')
+    ], 'source/assets/build/js/vendor.js')
     .copy([
         'source/_assets/js/PIE_IE9.js',
         'source/_assets/js/PIE_IE678.js',
         'source/_assets/js/html5shiv.js',
-    ], 'js')
-    .copyDirectory('source/_assets/img', 'img')
+    ], 'source/assets/build/js')
+    .copyDirectory('source/_assets/img', 'source/assets/build/img')
     .options({
         processCssUrls: false,
     })

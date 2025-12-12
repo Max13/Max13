@@ -5,9 +5,55 @@
 
     RewriteEngine On
 
+    # Stop AI bots
+    # RewriteCond %{REQUEST_URI} ^/malik\.html$ [NC]
+    RewriteCond %{HTTP_USER_AGENT} "AdsBot\-Google" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "Amazonbot" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "anthropic\-ai" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "Applebot" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "AwarioRssBot" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "AwarioSmartBot" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "Bytespider" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "CCBot" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "ChatGPT" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "ChatGPT\-User" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "Claude-Web" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "ClaudeBot" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "cohere\-ai" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "DataForSeoBot" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "Diffbot" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "Facebook" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "FacebookBot" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "Google" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "Google\-Extended" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "GPTBot" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "ImagesiftBot" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "magpie\-crawler" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "omgili" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "Omgilibot" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "openai" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "peer39_crawler" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "PerplexityBot" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "Perplexity\-User" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "YouBo" [NC]
+    # RewriteRule malik\.html https://%{HTTP_HOST}/ia.html [L,R=302]
+    # RewriteRule ^/malik /anti-ia/index.html [L]
+    RewriteCond %{REQUEST_URI} ^/malik
+    RewriteRule ^ /anti-ia/index.html [L]
+
     # Force SSL
     RewriteCond %{REMOTE_ADDR} !=127.0.0.1
     RewriteCond %{REMOTE_ADDR} !=::1
     RewriteCond %{HTTPS} !=on
     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    #RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteCond %{REQUEST_URI} (.+)/$
+    #RewriteRule ^ %1 [L,R=302]
+
+    RewriteRule ^questionnaire\-prealable$ "https\:\/\/forms\.gle\/qASegYXoyVY8pqkW7" [R=302,L]
+
+    #RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteCond %{REQUEST_FILENAME} !-f
+    #RewriteRule ^ "DEFAULT WEBSITE" [R=302,L]
 </IfModule>

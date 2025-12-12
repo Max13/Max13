@@ -2,6 +2,8 @@ User-agent: *
 @if ($page->production)
 Disallow: /getEmail.php
 Disallow: /storage/
+Disallow: /anti-ia
+Disallow: /malik
 @else
 Disallow: /
 @endif
